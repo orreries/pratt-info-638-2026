@@ -6,9 +6,11 @@ const authors = [
     {firstName: "Octavia", lastName: "Butler"},
     {firstName: "Langston", lastName: "Hughes"},
     {firstName: "Lois", lastName: "Lowry"},
+    {firstName: "Somebody", lastName: "Someone"},
   ];
 
-exports.all = authors;
 exports.add = (author) => {
   authors.push(author);
 }
+
+exports.all = authors;
