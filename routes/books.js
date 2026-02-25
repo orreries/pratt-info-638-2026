@@ -9,7 +9,7 @@ router.get('/', function(req, res, next) {
 });
 
 router.get('/form', async (req, res, next) => {
-  res.render('books/form', { title: 'BookedIn || Books', book: book, bookIndex: bookIndex });
+  res.render('books/form', { title: 'BookedIn || Books'});
 });
 
 router.post('/upsert', async (req, res, next) => {
@@ -21,7 +21,7 @@ router.post('/upsert', async (req, res, next) => {
 router.get('/edit', async (req, res, next) => {
   let bookIndex = req.query.id;
   let book = Book.get(bookIndex);
-  res.render('books/form', { title: 'BookedIn || Books', book: book });
+  res.render('books/form', { title: 'BookedIn || Books', book: book, bookIndex: bookIndex });
 });
 
 module.exports = router;
