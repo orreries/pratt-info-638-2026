@@ -3,7 +3,7 @@ const express = require('express');
 const handlebars = require('express-handlebars').create();
 const bodyParser = require('body-parser');
 
-//application improts
+//application imports
 const indexRouter = require('./routes/index');
 const authorsRouter = require('./routes/authors');
 const booksRouter = require('./routes/books');
