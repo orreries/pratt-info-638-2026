@@ -5,7 +5,8 @@ const authors = [
     {firstName: "Toni", lastName: "Morrison"},
     {firstName: "Octavia", lastName: "Butler"},
     {firstName: "Langston", lastName: "Hughes"},
-  ]
+    {firstName: "Lois", lastName: "Lowry"},
+  ];
 
 exports.all = authors;
 exports.add = (author) => {

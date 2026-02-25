@@ -4,7 +4,8 @@ const books = [
   {title: "The Three-Body Problem", publishingYear: 2006},
   {title: "The Bluest Eye", publishingYear: 1970},
   {title: "Kindred", publishingYear: 1979},
-  {title: "Montage of a Dream Deferred", publishingYear: 1951}
+  {title: "Montage of a Dream Deferred", publishingYear: 1951},
+  {title: "The Giver", publishingYear: 1993}
 ];
 
 exports.add = (book) => {
