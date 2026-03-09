@@ -10,6 +10,7 @@ const expressSession = require('express-session')
 const indexRouter = require('./routes/index');
 const authorsRouter = require('./routes/authors');
 const booksRouter = require('./routes/books');
+const genresRouter = require('./routes/genres'); // adding genres
 
 
 //framework setup
@@ -54,21 +55,23 @@ app.use((req, res, next) => {
   next()
 })
 
+
 //application setup
 app.use('/', indexRouter);
 app.use('/authors', authorsRouter);
 app.use('/books', booksRouter);
+app.use('/genres', genresRouter) // adding genre app
 
-// error messaging
+
 app.use((_req, res) => {
   res.status(404);
-  res.send("<h1>404 - nothing's here ╮(╯▽╰)╭</h1>");
+  res.send("<h1>404 - nothing's here ㄟ(≧◇≦)ㄏ</h1>");
 });
 
 app.use((err, _req, res, _next) => {
   console.error(err.message);
   res.status(500);
-  res.send("<h1>500 - ヾ(≧へ≦)〃</h1>");
+  res.send("<h1>500 - naur (≧﹏ ≦)</h1>");
 })
 
 
