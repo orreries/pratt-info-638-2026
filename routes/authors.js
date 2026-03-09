@@ -15,13 +15,19 @@ router.get('/form', function(req, res, next) {
 router.post('/upsert', function(req, res, next) {
   console.log(JSON.stringify(req.body));
   Author.upsert(req.body);
+  let createdOrupdated = req.body.id ? 'updated' : 'created';
+  req.session.flash = {
+    type: 'info',
+    intro: 'Success!',
+    message: `the author has been ${createdOrupdated}!`,
+  };
   res.redirect(303, "/authors");
 });
 
 router.get('/edit', function(req, res, next) {
-  let authorIndex = req.query.id
-  let author = Author.get(authorIndex);
-  res.render('authors/form', { title: 'BookedIn || Authors', author: author, authorIndex: authorIndex });
+  let authorIdx = req.query.id
+  let author = Author.get(authorIdx);
+  res.render('authors/form', { title: 'BookedIn || Authors', author: author, authorIdx: authorIdx });
 });
 
 module.exports = router;

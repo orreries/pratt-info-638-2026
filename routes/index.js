@@ -10,5 +10,4 @@ router.get('/about_us', (_req, res) => {
   res.render('about_us', {title: "BookedIn"})
 });
 
-
 module.exports = router;
