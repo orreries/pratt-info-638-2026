@@ -31,3 +31,6 @@ router.get('/edit', function(req, res, next) {
 });
 
 module.exports = router;
+
+// an issue that is happening is that when i'm editing a genre
+// it just says that the genre has been created and not that it has been updated
