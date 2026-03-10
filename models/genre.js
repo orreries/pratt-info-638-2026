@@ -10,9 +10,6 @@ const genres = [
 exports.all = genres;
 exports.upsert = (genre) => {
   if (genre.id) {
-  // the created/updated upsert was giving me issues so i wanted to check the terminal 
-  // to see if it was passing through the correct index number (it is)  
-  console.log('genre id:', genre.id); 
     exports.update(genre);
   } else {
     exports.add(genre);

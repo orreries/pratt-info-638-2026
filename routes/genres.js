@@ -34,5 +34,5 @@ module.exports = router;
 
 // an issue that is happening is that when i'm editing a genre
 // it just says that the genre has been created and not that it has been updated
-// SOLUTION FOUND: looked at what was saved as the genreId number made sure it had correct genre index number
-// checking in the terminal ended up solving the issue
+// SOLUTION FOUND: looked at what was saved as the genreId number made sure it had correct index number
+// checking in the terminal using console.log ended up solving the issue
