@@ -5,7 +5,7 @@ const books = [
   {title: "The Bluest Eye", publishingYear: 1970, genreIds: ["0"]},
   {title: "Kindred", publishingYear: 1979, genreIds: ["1"]},
   {title: "Montage of a Dream Deferred", publishingYear: 1951, genreIds: ["5"]},
-  {title: "The Giver", publishingYear: 1993, genreIds: ["4"]},
+  {title: "The Giver", publishingYear: 1993, genreIds: ["1"]},
   {title: "The Giving Tree", publishingYear: 1964, genreIds: ["4"]}
 ];
 
